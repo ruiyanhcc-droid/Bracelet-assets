@@ -4,8 +4,8 @@ on:
   push:
     branches: [ main ]
     paths:
-      - "raw_materials/**"
-      - "compress_materials.py"
+      - "raw_images/**"
+      - "compress_and_sync.py"
   workflow_dispatch: {}
 
 jobs:
