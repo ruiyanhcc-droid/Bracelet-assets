@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main ]
     paths:
-      - "raw_images/**"
+      - "raw_materials/**"
       - "compress_and_sync.py"
   workflow_dispatch: {}
 
@@ -25,7 +25,7 @@ jobs:
         run: pip install pillow
 
       - name: Run compression script
-        run: python compress_materials.py
+        run: python compress_and_sync.py
 
       - name: Commit compressed images
         run: |
