@@ -5,7 +5,7 @@ on:
     branches: [ main ]
     paths:
       - "raw_materials/**"
-      - "compress_and_sync.py"
+      - "compress_materials.py"
   workflow_dispatch: {}
 
 jobs:
